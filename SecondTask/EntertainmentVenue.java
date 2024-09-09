@@ -17,11 +17,11 @@ public class EntertainmentVenue {
         boolean isVip = scanner.nextBoolean();
 
         int entranceFee = 5000;
-//i am adding some changes for gitHub
 
-        System.out.println("Enter the amount for order:");
+        System.out.println("Enter the amount for order: ");
         double orderAmount = scanner.nextDouble();
         if (isVip) {
+            entranceFee = 0;  // I add this line following Davit's comment
             double discount = (orderAmount * 15)/100;
             orderAmount = orderAmount - discount;
         }

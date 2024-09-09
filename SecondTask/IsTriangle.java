@@ -10,7 +10,10 @@ public class IsTriangle {
         int b = scanner.nextInt();
         System.out.println("Enter the length of the third side of the triangle:");
         int c = scanner.nextInt();
-
+        if (a <= 0 || b <= 0 || c <= 0) { // adding this validation following Davit's comment
+            System.out.println("Triangle side length must be natural number.");
+            System.exit(2);
+        }
         if (a + b > c && a + c > b && b + c > a) {
             System.out.println("It is possible to construct a triangle with the sides: " + a + ", " + b + ", " + c);
         } else {

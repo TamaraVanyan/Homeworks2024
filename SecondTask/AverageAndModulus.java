@@ -16,11 +16,33 @@ public class AverageAndModulus {
 
         int average = (num1 + num2 + num3) / 3;
 
-        int sumOfAbsValues = Math.abs(num1) + Math.abs(num2) + Math.abs(num3);
-        double result = (double) sumOfAbsValues / average;
+        int absNum1;
+        if (num1 < 0) {
+            absNum1 = -1 * num1;
+        } else {
+            absNum1 = num1;
+        }
 
-        System.out.println("The result is: " + result);
+        int absNum2;
+        if (num2 < 0) {
+            absNum2 = -1 * num2;
+        } else {
+            absNum2 = num2;
+        }
 
+        int absNum3;
+        if (num3 < 0) {
+            absNum3 = -1 * num3;
+        } else {
+            absNum3 = num3;
+        }
+        int sumOfAbsValues = absNum1 + absNum2 + absNum3;
+        if (average != 0) {
+            double result = (double) sumOfAbsValues / average;
+            System.out.println("The result is: " + result);
+        } else {
+            System.out.println("The average is zero, division cannot be performed.");
+        }
         scanner.close();
     }
 }
