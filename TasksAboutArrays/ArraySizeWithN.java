@@ -6,7 +6,7 @@ public class ArraySizeWithN {
 
         int n = scanner.nextInt();
 
-        if(n == 0 || n < 0){
+        if(n <= 0){
             System.out.println("n should be natural number.");
             System.exit(2);
         }
@@ -14,13 +14,9 @@ public class ArraySizeWithN {
         int[] array;
         switch (n) {
             case 3:
-                array = new int[3];
-                break;
             case 4:
-                array = new int[4];
-                break;
             case 5:
-                array = new int[5];
+                array = new int[n];
                 break;
             case 6:
             case 7:

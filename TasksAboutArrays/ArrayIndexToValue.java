@@ -17,15 +17,11 @@ public class ArrayIndexToValue {
         }
 
         int[] array = new int[n];
-        if (a < n){
-            array[a] = a;
-        }
-        if (a + 1 < n){
-            array[a + 1] = a + 1;
-        }
-        if (a + 2 < n){
-            array[a + 2] = a + 2;
-        }
+
+        array[a] = a;
+        array[a + 1] = a + 1;
+        array[a + 2] = a + 2;
+
         System.out.println(Arrays.toString(array));
     }
 }

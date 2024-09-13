@@ -5,7 +5,7 @@ public class ArrayInputMinMaxNumbers {
         Scanner scanner = new Scanner(System.in);
         int n = scanner.nextInt();
 
-        if(n < 1 || n >8) {
+        if(n < 2 || n >8) {
             System.out.println("Array length should be from 2 to 8!");
             System.exit(2);
         }
