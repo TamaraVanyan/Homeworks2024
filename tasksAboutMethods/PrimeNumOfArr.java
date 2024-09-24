@@ -9,8 +9,7 @@ public class PrimeNumOfArr {
     public static void main(String[] args) {
         int[] array = {1, 2, 6, 3, 5, 8, 13, 12, 17};
 
-        for (int i = 0; i < array.length; i++) {
-            int num = array[i];
+        for (int num : array) {
             if (isPrime(num)) {
                 System.out.println(num + " - Is prime number");
             } else {
