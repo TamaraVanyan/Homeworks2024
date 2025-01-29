@@ -1,9 +1,7 @@
 package state;
-
 import java.util.LinkedList;
 
 public class RemoveDuplicates {
-
     public static void removeDuplicates(LinkedList<Country> countries) {
         for (int i = 0; i < countries.size(); i++) {
 
