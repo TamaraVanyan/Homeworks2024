@@ -1,7 +1,6 @@
 package state;
 
 import java.util.LinkedList;
-
 import static state.RemoveDuplicates.removeDuplicates;
 
 public class DuplicatesChecking {
